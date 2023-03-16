@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root{
+    --box-shadow:0 1px 3px rgba(0,0,0,0.12)
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fredoka One',sans-serif;
+    background-color:snow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container{
+    margin: 30px,auto;
+    width: 350px;
+}
+h1{
+    letter-spacing: 1px;
+    margin: 50px 0;
+}
+h3{
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin: 40px 0 10px;
+}
+h4{
+    margin: 0;
+}
+.income-expenses-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+.income-expenses-container>div{
+    flex: 1;
+    text-align: center;
+}
+.income-expenses-container>div:first-of-type{
+    border-right: 1px solid #bbb;
+}
+.money{
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+.moneyplus{
+    color:green;
+}
+.moneyminus{
+    color:red;
+}
+label{
+    display: inline-block;
+    margin: 10px 0;
+}
+input[type="text"],input[type="number"]{
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+.add-btn{
+    background-color: blueviolet;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 10px 0 30px;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+}
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0.20px;
+}
+.list li{
+    background-color: whitesmoke;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+.list li.plus{
+    border-left: 7px solid green;
+}
+.list li.minus{
+    border-left: 7px solid red;
+}
+.delete-btn{
+    cursor: pointer;
+    background-color: red;
+    color:whitesmoke;
+    border: 0;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top:50%;
+    right: -45px;
+    transform: translate(-100%,-50%);
+    opacity: 0;
+    transition: opacity 0.10s ease;
+}
+.list li:hover .delete-btn{
+    opacity: 1;
+}

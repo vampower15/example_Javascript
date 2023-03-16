@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income & Expenses Account</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <h1>Income and Expenses Account</h1>
+    <div class="container">
+        <h5>Balance (Bath)</h5>
+        <h2 id="balance">0.00</h2>
+        <div class="income-expenses-container">
+            <div>
+                <h4>Income</h4>
+                <p id="money-plus" class="moneyplus">5,000</p>
+            </div>
+            <div>
+                <h4>Expenses</h4>
+                <p id="money-minus" class="moneyminus">800</p>
+            </div>
+        </div>
+        <h3>Transaction History</h3>     
+        <ul id="list" class="list">
+            <!-- <li class="minus">maintenance<span>500</span>     
+                <button class="delete-btn">x</button>         
+            </li> -->
+        </ul>
+        <h3>Add Transaction</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Name List</label>
+                <input type="text" name="" id="text" placeholder="Name Transaction">
+            </div>
+            <div class="form-control">
+                <label for="amount">Amount<br>
+                    (+ Income , - Expenses)
+                </label>
+                <input type="number" name="" id="amount" placeholder="Amount">
+            </div>
+            <button class="add-btn">Add Transaction</button>
+        </form>
+    </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
